@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnec
+t" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Fredoka', cursive;
+      background: radial-gradient(circle at center, #ffe6f7, #dff3ff);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fff0f5;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #cc2c92;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ff69b4;
+    }
+
+    .section {
+      padding: 195px 60px 240px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      margin-bottom: 2.5rem;
+      color: #cc2c92;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 0 auto 3rem;
+      font-size: 1.4rem;
+      line-height: 1.9;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 0 20px;
+      padding: 16px 32px;
+      background-color: #ff69b4;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .buttons a:hover {
+      background-color: #cc2c92;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding-top: 40px;
+    }
+
+    .gallery img {
+      max-width: 260px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #f7f7f7;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: 'Fredoka', cursive;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      width: 100%;
+      background: #333;
+      color: #fff;
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .about-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .about-text {
+      flex: 1 1 400px;
+    }
+
+    .about-image {
+      flex: 1 1 300px;
+    }
+
+    .about-image img {
+      max-width: 100%;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .header {
+        font-size: 24px;
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+      }
+
+      p {
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+    
+
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#portfolio">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Portfolio Section hehehehhehehhehehhehehehhehehhehehhe-->
+  <section class="section" id="portfolio">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hi! I'm Rhudvi Kadam, a computer engineering student passionate about coding, UI/UX, and all things tech. Here's a glimpse into my creative and technical side!</p>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <h1>About Me</h1>
+    <div class="about-content">
+      <div class="about-text">
+        <p>I'm currently pursuing a Diploma in Computer Engineering, diving deep into programming, design, and systems. I enjoy combining logic with creativity to build cool, helpful projects.</p>
+        <div class="buttons">
+          <a href="certificates.html" target="_blank">Certificates</a>
+          <a href="figma.html" target="_blank">Figma Designs</a>
+        </div>
+      </div>
+      <div class="about-image">
+        <img src="profile.jpg" alt="Rhudvi Kadam">
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section class="section" id="certificates">
+    <h1>Certificates</h1>
+    <div class="gallery">
+      <img src="certificate1.jpg" alt="Certificate 1">
+      <img src="certificate2.jpg" alt="Certificate 2">
+      <img src="certificate3.jpg" alt="Certificate 3">
+    </div>
+  </section>
+
+  <!-- Figma Designs Section -->
+  <section class="section" id="figma">
+    <h1>Figma Designs</h1>
+    <div class="gallery">
+      <img src="figma1.png" alt="Figma Design 1">
+      <img src="figma2.png" alt="Figma Design 2">
+      <img src="figma3.png" alt="Figma Design 3">
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <h1>Projects</h1>
+    <p>From front-end websites to backend logic, here are some of the things I’ve built. More coming soon!</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="full-section">
+  <h2><center>Contact Me</center></h2>
+  <div class="contact-form-container">
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+  <div class="social-icons">
+ </div>
+</section>
+</body>
+</html>
+
